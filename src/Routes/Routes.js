@@ -29,7 +29,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path: "/products/:name",
-                element: <Products></Products>,
+                element: <PrivateRoutes><Products></Products></PrivateRoutes>,
                 loader: async ({params}) => {
                     return fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${params.name}`)
                 }
