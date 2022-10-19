@@ -14,7 +14,7 @@ export const Header = () => {
     }
 
     return (
-        <div className="bg-gray-900">
+        <div className="bg-gray-900 sticky top-0 z-10">
             <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                 <div className="relative flex items-center justify-between">
                     <a
